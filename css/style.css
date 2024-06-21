@@ -1,0 +1,61 @@
+:root {
+    --main-color: #17a2b8;
+    --dark-blue: #24353f;
+    --light-grey: #ced4da;
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.card h1 {
+    color: var(--main-color)
+}
+
+.card input,
+.card button {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    outline: none;
+}
+
+.card input::placeholder {
+    color: var(--light-grey);
+}
+
+.card input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.card button {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.card button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.card p {
+    color: white;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
